@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "version": "1.1",
+    "last_updated": "2026-01-21",
+    "description": "Amazon Jewelry Category Sensitive & Prohibited Keywords List (Including Age/Children Triggers)",
+    "target_audience": "Stainless Steel, Copper, Crystal Jewelry Sellers"
+  },
+  "categories": [
+    {
+      "category_name": "Children_Product_Trigger",
+      "description": "极高危区域。任何暗示受众为12岁以下的词，都会触发CPC审核（铅镉检测）。无检测报告必死。",
+      "risk_level": "CRITICAL",
+      "keywords": [
+        {
+          "term": "Girl",
+          "match_type": "broad",
+          "reason": "亚马逊机器人判定'Girl'通常指12岁以下。除非你的Listing非常明确是成人款（比如戒指尺寸大），否则极易触发CPC审核。",
+          "suggestion": "Women, Ladies, Teens (部分风险), Girlfriend"
+        },
+        {
+          "term": "Teen",
+          "match_type": "broad",
+          "reason": "处于灰色地带。虽然13岁+算成人，但亚马逊经常误判。如果不想写申诉信证明产品是给大龄青少年的，初期最好避开。",
+          "suggestion": "Young women, Trendy jewelry"
+        },
+        {
+          "term": "Child",
+          "match_type": "broad",
+          "reason": "包括 'Children', 'Kid', 'Kids'。100%触发儿童合规审核。",
+          "suggestion": "N/A (严禁使用)"
+        },
+        {
+          "term": "Daughter",
+          "match_type": "phrase",
+          "reason": "常用词，但有风险。'Gift for daughter' 结合可爱设计（如小动物、心形）容易被判为儿童产品。",
+          "suggestion": "Gift for her, Family jewelry"
+        },
+        {
+          "term": "School",
+          "match_type": "broad",
+          "reason": "暗示上学年龄。'Back to school' 是高危场景词。",
+          "suggestion": "College, University, Office"
+        },
+        {
+          "term": "Baby",
+          "match_type": "broad",
+          "reason": "包括 'Toddler', 'Infant'。不仅触发CPC，还触发窒息危险警告。",
+          "suggestion": "N/A"
+        },
+        {
+          "term": "Princess",
+          "match_type": "broad",
+          "reason": "这个词极具迷惑性。'Princess style' 经常被算法标记为儿童玩具或饰品。",
+          "suggestion": "Fairy tale style, Elegant"
+        },
+        {
+          "term": "Little",
+          "match_type": "phrase",
+          "reason": "如 'Little sister', 'Little girl'。形容尺寸 'Little' 没事，但形容人不行。",
+          "suggestion": "Small, Petite (形容尺寸)"
+        }
+      ]
+    },
+    {
+      "category_name": "Material_Risk",
+      "description": "词汇涉及材质真实性，无证书极易导致Listing下架或审核",
+      "risk_level": "CRITICAL",
+      "keywords": [
+        {
+          "term": "Natural",
+          "match_type": "exact",
+          "reason": "无GIA等权威机构证书，禁止声称天然，容易被判定为误导买家。",
+          "suggestion": "Genuine stone texture, Earth-mined feel, Organic pattern"
+        },
+        {
+          "term": "Real",
+          "match_type": "phrase",
+          "reason": "例如 'Real Gold', 'Real Silver'。除非是纯金银，否则违规。",
+          "suggestion": "Gold-tone, Silver-tone, Stainless Steel"
+        },
+        {
+          "term": "Genuine",
+          "match_type": "phrase",
+          "reason": "同Natural，对于宝石类目，无证书慎用。",
+          "suggestion": "Authentic look"
+        },
+        {
+          "term": "Solid Gold",
+          "match_type": "phrase",
+          "reason": "镀金产品绝对禁止使用。",
+          "suggestion": "18K Gold Plated"
+        },
+        {
+          "term": "Diamond",
+          "match_type": "exact",
+          "reason": "如果是锆石或水晶，必须在前面加 'Simulated' 或 'Created'，不能单用。",
+          "suggestion": "Cubic Zirconia, CZ, Crystal"
+        },
+        {
+          "term": "Jade",
+          "match_type": "exact",
+          "reason": "玉石类目也是重灾区，如果不是真玉，必须叫 'Green Stone' 或 'Simulated Jade'。",
+          "suggestion": "Green Aventurine (如果是东陵玉), Green Stone"
+        }
+      ]
+    },
+    {
+      "category_name": "Medical_Claims",
+      "description": "涉及医疗功效承诺，属于FDA监管红线，亚马逊机器人秒删",
+      "risk_level": "HIGH",
+      "keywords": [
+        {
+          "term": "Cure",
+          "match_type": "broad",
+          "reason": "绝对禁止承诺治愈任何疾病。",
+          "suggestion": "Relieve (慎用), Soothe"
+        },
+        {
+          "term": "Arthritis",
+          "match_type": "broad",
+          "reason": "铜手镯卖家最爱用的词，也是必死词。属于具体的医疗疾病名称。",
+          "suggestion": "Traditional wellness"
+        },
+        {
+          "term": "Pain Relief",
+          "match_type": "phrase",
+          "reason": "医疗承诺。",
+          "suggestion": "Comfort"
+        },
+        {
+          "term": "Therapy",
+          "match_type": "broad",
+          "reason": "暗示医疗器械。",
+          "suggestion": "Spiritual practice"
+        },
+        {
+          "term": "Anxiety",
+          "match_type": "broad",
+          "reason": "焦虑症属于精神疾病，不能说首饰能治焦虑。",
+          "suggestion": "Calming, Stress-reducing (低风险)"
+        }
+      ]
+    },
+    {
+      "category_name": "Compliance_Trigger",
+      "description": "易触发安全文档审核(Safety Documentation Request)",
+      "risk_level": "MEDIUM",
+      "keywords": [
+        {
+          "term": "Hypoallergenic",
+          "match_type": "exact",
+          "reason": "经常触发亚马逊要求提供化学检测报告（如镍释放量）。",
+          "suggestion": "Skin-friendly, Nickel-safe"
+        },
+        {
+          "term": "Non-toxic",
+          "match_type": "exact",
+          "reason": "可能触发杀虫剂或化学品审核。",
+          "suggestion": "Safe materials"
+        }
+      ]
+    },
+    {
+      "category_name": "Brand_IP",
+      "description": "常见品牌侵权词",
+      "risk_level": "HIGH",
+      "keywords": [
+        {
+          "term": "Swarovski",
+          "match_type": "broad",
+          "reason": "哪怕你用的是施华洛世奇元素，也不能在标题里直接写。",
+          "suggestion": "Austrian Crystal"
+        },
+        {
+          "term": "Pandora",
+          "match_type": "broad",
+          "reason": "形容珠子手链时常用，必死。",
+          "suggestion": "Charm bracelet compatible"
+        },
+        {
+          "term": "Tiffany",
+          "match_type": "broad",
+          "reason": "即便是形容颜色 'Tiffany Blue' 也不行。",
+          "suggestion": "Turquoise color, Aqua blue"
+        }
+      ]
+    }
+  ]
+}

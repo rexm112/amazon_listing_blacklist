@@ -14,10 +14,10 @@ st.set_page_config(
 @st.cache_data
 def load_blacklist():
     try:
-        with open('amazon_jewelry_blacklist_v1.1.json', 'r', encoding='utf-8') as f:
+        with open('amazon_jewelry_blacklist.json', 'r', encoding='utf-8') as f:
             return json.load(f)
     except FileNotFoundError:
-        st.error("找不到敏感词库文件 (amazon_jewelry_blacklist_v1.1.json)，请确认文件在同一目录下。")
+        st.error("找不到敏感词库文件 (amazon_jewelry_blacklist.json)，请确认文件在同一目录下。")
         return None
 
 # 3. 核心检查逻辑 (Regex Magic)
